@@ -4,6 +4,15 @@
 
 Welcome to BaseBuddy, your friendly gateway to building on Base. This platform lets you deploy smart contracts and interact with the blockchain without writing a single line of code.
 
+## Smart Contract Addresses
+
+Here are the core BaseBuddy contracts deployed on Base:
+
+- **Token Creator Contract**: `0x619B02cd900a0f528e264001469099A0FFC85a43`
+- **NFT Minter Contract**: `0x872ED50026b6c58Ee1e33f95c1937b3Ff909f098`
+- **gm Contract**: `0x607f5bbdCcA9D45C1Ad487ff6669F4D42bffC24a`
+- **Smart Contract Deployer Contract**: `0xE815A501B204371Ebe2dF9094e9eA87d5cF0C35d`
+
 ## What You Can Do
 
 ### GM Contract
