@@ -3,7 +3,7 @@
 The **Simple Staking Contract** lets you stake **BUDDY tokens** and earn rewards based on how long you lock them.  
 Pick a commitment level, stake your tokens, and watch your rewards grow over time — all on Base.
 
-> **Note:** BUDDY is a free, test-only token with no real-world or monetary value. It’s used purely for learning and experimenting within BaseBuddy.
+> **Note:** BUDDY is a free, test-only token with no real-world or monetary value. It’s used purely for learning and experimenting within BaseBuddy. Claim your buddy tokens for free from the faucet.
 
 ---
 
@@ -20,6 +20,7 @@ Pick a commitment level, stake your tokens, and watch your rewards grow over tim
 
 Simple Staking is a **time-based rewards system**:
 
+- Claim buddy tokens from the faucet
 - Lock your BUDDY tokens for a set period  
 - Earn rewards that build up over time  
 - Claim your rewards anytime (even while still staked)  
@@ -48,7 +49,7 @@ Rewards grow **linearly**, so you can claim partial rewards anytime before the e
 
 ### Staking Steps
 
-1. **Get BUDDY tokens** (from the faucet or BaseBuddy airdrops)  
+1. **Get BUDDY tokens** (Free from faucet)  
 2. **Approve** the staking contract to use your tokens  
 3. **Choose a lock period** (1 week, 1 month, or 3 months)  
 4. **Stake** your tokens  
@@ -117,20 +118,6 @@ Example strategies:
 - Stake 1,000 BUDDY every month for 3 months  
 - You’ll get one stake unlocking each month — creating consistent liquidity
 
----
-
-## Gas & Efficiency
-
-The contract is designed to be **light and efficient** on Base:
-
-| Action | Typical Gas |
-|---------|--------------|
-| Approve | ~45,000 |
-| Stake | ~100,000 |
-| Claim Rewards | ~60,000 |
-| Unstake | ~80,000 |
-
-Each action usually costs just a few cents in Base gas fees.
 
 ---
 
@@ -148,28 +135,4 @@ Before staking large amounts, always make sure the contract has a healthy reward
 
 ---
 
-## Use Cases
-
-### For BUDDY Holders
-- Earn passive rewards on idle tokens  
-- Choose your own lock period  
-- Claim rewards flexibly  
-- Stack multiple stakes for better timing  
-
-### For Learners & Builders
-- Practice staking logic safely  
-- Understand reward accrual systems  
-- Experiment with Base transactions  
-
-### For Projects
-- Simulate staking or loyalty systems  
-- Reward testnet contributors  
-- Educate users about DeFi mechanics  
-
----
-
-## Risks & Best Practices
-
-| Type | What to Know |
-|------|---------------|
-| **Smart Contract Risk** | The staking contract is
+## This token has no value and is available for free from the faucet
