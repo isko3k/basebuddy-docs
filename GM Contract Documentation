@@ -1,58 +1,116 @@
-Overview
-The GM Contract is your onchain greeting system on Base. Every time you say GM, the blockchain records it forever, tracks your dedication through streaks, and rewards you with energy points.
-Contract Address: 0xa42bbE6477CF20dAa5c9b04b68dBA385e42eb971
+---
+title: GM Contract
+description: Onchain greetings, streaks, and energy rewards on Base.
+---
 
-What Is The GM Contract?
-Think of it as a proof-of-presence system — show up, say GM, and the blockchain remembers. Your greetings aren't just messages; they're timestamped records showing when and how often you engaged with the Base community.
+# GM Contract
 
-How It Works
-Sending a GM
-When you call the Greeter() function:
+Say **GM** to the Base blockchain — and let it remember forever.  
+Each greeting records your presence, builds streaks, and earns you **energy points**.  
+It’s proof that you showed up today.
 
-The contract checks you've waited at least 1 hour since your last GM
-It updates your streak (consecutive days saying GM)
-It tracks how many GMs you've sent today
-It awards energy points based on your daily activity
-Your stats are permanently recorded onchain
+---
 
+## Contract Address
 
-Energy Rewards System
-Your energy rewards scale with daily activity:
-GM Count TodayEnergy EarnedAction Type1st GM100 pointsgm_first2nd-4th GM200 points eachgm_streak5th GM500 points (bonus)gm_5_bonus6th+ GM200 points eachgm_streak
-The 5-GM Bonus
-Once per day, hitting your 5th GM triggers a 500-point bonus. After claiming this bonus, additional GMs that day earn the standard 200 points.
+| Contract | Address |
+|-----------|----------|
+| **GM Contract** | `0xa42bbE6477CF20dAa5c9b04b68dBA385e42eb971` |
 
-Streak System
-How Streaks Work
+---
 
-New streak: Say GM on a new day → streak starts at 1
-Continue streak: Say GM the next consecutive day → streak increases
-Break streak: Miss a day → streak resets to 1
-Best streak: Your longest streak is saved forever
+## Overview
 
-Streak Examples
-Day 1: GM → Streak: 1
-Day 2: GM → Streak: 2
-Day 3: GM → Streak: 3
-Day 5: GM (missed day 4) → Streak: 1 (reset)
+The **GM Contract** is your onchain greeting system on **Base**.  
+Every time you say GM, the blockchain:
 
-Cooldown System
-Rules
+- Records your greeting permanently  
+- Tracks your **daily streaks**  
+- Rewards you with **energy points**  
+- Keeps an immutable record of your engagement  
 
-1 hour cooldown between GMs
-Multiple GMs per day are allowed (if spaced 1 hour apart)
-Daily GM counter resets at midnight UTC
+Think of it as **proof-of-presence** — showing up every day and saying GM becomes your onchain ritual.
 
-What This Means
-You can send up to 24 GMs per day (one every hour), but most users send 1-5 GMs daily to maximize efficiency.
+---
 
-Your Stats
-What's Tracked
-The contract stores these stats for every user:
-StatDescriptionTotal GMsLifetime count of all GMs sentCurrent StreakConsecutive days with at least 1 GMLongest StreakYour all-time best streakGMs TodayCount resets daily at midnight UTCLast GM TimeTimestamp of your most recent GMNext Energy RewardShows what your next GM will earn
-Reading Your Stats
-Call getMyStats() to see:
-javascript{
+## How It Works
+
+### Sending a GM
+
+When you call the `Greeter()` function:
+
+1. The contract checks you’ve waited at least **1 hour** since your last GM  
+2. Updates your **current streak** (consecutive days saying GM)  
+3. Tracks how many GMs you’ve sent **today**  
+4. Awards **energy points** based on your activity  
+5. Records your stats **onchain forever**
+
+---
+
+### Energy Rewards System
+
+| GM Count Today | Energy Earned | Action Type |
+|----------------|----------------|--------------|
+| 1st GM | 100 points | `gm_first` |
+| 2nd–4th GM | 200 points each | `gm_streak` |
+| 5th GM | 500 points (bonus) | `gm_5_bonus` |
+| 6th+ GM | 200 points each | `gm_streak` |
+
+#### 5-GM Bonus
+Once per day, hitting your **5th GM** triggers a **500-point bonus**.  
+After that, additional GMs earn the standard **200 points**.
+
+---
+
+### Streak System
+
+Your streak increases every consecutive day you say GM.
+
+| Action | Result |
+|---------|--------|
+| Say GM on a new day | Streak starts at **1** |
+| Say GM the next day | Streak **increases** |
+| Miss a day | Streak **resets** to 1 |
+| Best streak | Saved permanently |
+
+**Example:**
+
+| Day | Action | Result |
+|-----|---------|--------|
+| Day 1 | GM | Streak: 1 |
+| Day 2 | GM | Streak: 2 |
+| Day 3 | GM | Streak: 3 |
+| Day 5 | (missed Day 4) | Streak reset to 1 |
+
+---
+
+### Cooldown System
+
+- **1 hour cooldown** between each GM  
+- Multiple GMs per day are allowed (if spaced out)  
+- Daily GM counter resets at **midnight UTC**
+
+You can send up to **24 GMs per day**, though most users send 1–5 for maximum efficiency.
+
+---
+
+## Your Stats
+
+### What’s Tracked
+
+| Stat | Description |
+|------|--------------|
+| **Total GMs** | Lifetime count of all GMs sent |
+| **Current Streak** | Consecutive days with at least one GM |
+| **Longest Streak** | All-time best streak |
+| **GMs Today** | Count resets daily at midnight UTC |
+| **Last GM Time** | Timestamp of most recent GM |
+| **Next Energy Reward** | Points your next GM will earn |
+
+### Reading Your Stats
+
+```javascript
+getMyStats() ➜ {
   totalGms: 127,           // All-time GM count
   currentStreak: 15,       // Days in a row
   bestStreak: 23,          // Personal record
@@ -61,115 +119,3 @@ javascript{
   cooldown: 3245,          // Seconds until next GM
   nextEnergyReward: 200    // Points for next GM
 }
-
-Global Statistics
-Community Metrics
-The contract tracks:
-
-Total GMs sent by all users
-Total unique users who've ever GM'd
-GMs sent today across the network
-Peak daily GMs (all-time record)
-
-These stats show the pulse of the Base community — how active everyone is and when engagement peaks.
-
-Gas Optimization
-The contract is designed to minimize gas costs:
-Storage Efficiency
-
-Packed storage structs reduce gas by 40-60%
-Single transaction updates all your stats
-Events are free for users (emitted after state changes)
-
-What This Means
-Saying GM costs approximately 50,000-70,000 gas (~$0.10-0.30 depending on Base gas prices).
-
-Use Cases
-For Individuals
-
-Build streaks to show consistent engagement
-Earn energy to unlock future features
-Prove presence with immutable onchain records
-Track habits via blockchain timestamps
-
-For Communities
-
-Engagement metric for DAOs and projects
-Onchain attendance for events or programs
-Proof of participation for airdrops or rewards
-Community health indicator via daily GM counts
-
-
-Best Practices
-Maximizing Rewards
-
-Say GM once daily to build streaks
-Aim for 5 GMs per day to hit the bonus (if active)
-Set reminders to maintain your streak
-Check your cooldown timer before sending
-
-Efficient Usage
-
-One GM per day is enough to maintain streaks
-Multiple GMs per day boost energy but require more transactions
-The 5-GM bonus is worth pursuing if you're very active
-
-
-Common Questions
-Q: What happens if I miss a day?
-A: Your streak resets to 1, but your total GMs and longest streak are preserved.
-Q: Can I GM multiple times per day?
-A: Yes, with a 1-hour cooldown between each GM.
-Q: When does the daily counter reset?
-A: Midnight UTC. Your GM count and 5-GM bonus eligibility reset then.
-Q: Do energy points expire?
-A: No. Energy points are permanent and tracked in the Energy Registry contract.
-Q: Can I transfer my streak to another wallet?
-A: No. Streaks and stats are tied to your wallet address permanently.
-
-Technical Details
-Contract Functions
-Write Functions:
-
-Greeter() — Send a GM, update stats, earn energy
-
-Read Functions:
-
-getMyStats() — View your complete stats
-getUserStats(address) — View another user's stats
-getGlobalStats() — View network-wide statistics
-getTimeUntilNextGm() — Check your cooldown
-canClaim5GmBonus(address) — Check bonus eligibility
-
-Events Emitted
-solidityevent GmSaid(
-    address indexed user,
-    uint128 totalGms,
-    uint256 energyEarned,
-    uint32 streak,
-    uint8 gmsToday,
-    uint64 timestamp
-);
-
-event NewStreakRecord(address indexed user, uint32 newStreak);
-event FiveGmBonus(address indexed user, uint64 timestamp);
-
-
-Security & Reliability
-Audited Features
-
-Reentrancy protection via checks-effects pattern
-Integer overflow protection (Solidity 0.8.30)
-Access control for energy granting
-Immutable registry reference
-
-Known Limitations
-
-Cooldown uses block timestamps (can drift by ~15 seconds)
-No mechanism to pause or recover lost streaks
-Stats cannot be migrated between wallets
-
-
-Your GM journey starts with a single greeting. Every GM after that builds your onchain legacy.
-
-GM Contract — Show up. Say GM. Build history.
