@@ -25,7 +25,7 @@ Here are the core BaseBuddy contracts deployed on Base:
 
 ## What You Can Do
 
-### 🪩 GM Contract
+### GM Contract
 Send a GM message that lives **onchain forever**.  
 Every time you say GM, the contract tracks your streak and awards energy points — think of it as **proof you showed up today**.  
 Your GM count and last message are stored on the blockchain, and your energy points grow with every greeting.
@@ -39,7 +39,7 @@ Every message earns you badges based on activity — your display name and inter
 
 ---
 
-### 🪙 Create Your Own Token
+### Create Your Own Token
 Launch your own **ERC-20 token** in seconds.  
 You choose the:
 - **Name**
