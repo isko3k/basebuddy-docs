@@ -5,7 +5,7 @@ This platform lets you deploy smart contracts and interact with the blockchain �
 
 ---
 
-## 🧱 Smart Contract Addresses
+## Smart Contract Addresses
 
 Here are the core BaseBuddy contracts deployed on Base:
 
@@ -23,7 +23,7 @@ Here are the core BaseBuddy contracts deployed on Base:
 
 ---
 
-## 🚀 What You Can Do
+## What You Can Do
 
 ### 🪩 GM Contract
 Send a GM message that lives **onchain forever**.  
@@ -32,7 +32,7 @@ Your GM count and last message are stored on the blockchain, and your energy poi
 
 ---
 
-### 💬 Onchain Messenger
+### Onchain Messenger
 Leave your message on the **Base blockchain permanently**.  
 Write posts, reply to others, and like messages that resonate with you.  
 Every message earns you badges based on activity — your display name and interactions are stored **onchain forever**, forming a permanent record of Base community conversations.
@@ -51,19 +51,19 @@ Once deployed, your token exists on the Base network and can be traded or sent t
 
 ---
 
-### 🎨 Mint an NFT
+### Mint an NFT
 Create your own **ERC-721 NFT** with just a **name and description** — no IPFS or metadata setup required.  
 Your NFT is minted directly to your wallet, ready to collect, trade, or test.
 
 ---
 
-### ⚙️ Deploy a Smart Contract
+### Deploy a Smart Contract
 Become a smart contract owner by deploying through our **HelloWorld factory**.  
 You’ll gain control and ownership over the contract — perfect for learning how contract ownership and deployment work.
 
 ---
 
-### 💰 Simple Staking
+### Simple Staking
 Stake **BUDDY tokens** and earn rewards based on your lock period:
 
 | Lock Period | APY |
@@ -77,7 +77,7 @@ Need tokens? Use the **built-in faucet** to claim **1,000 BUDDY** every 24 hours
 
 ---
 
-### 🤝 Payment Splitter Factory
+### Payment Splitter Factory
 Automatically distribute payments among multiple recipients.  
 You can:
 - Add up to **10 recipients**
@@ -88,19 +88,19 @@ The contract handles the math and transfers automatically.
 
 ---
 
-### 🔄 Swap Tokens
+### Swap Tokens
 Use the integrated **Uniswap widget** to trade tokens directly on Base.  
 Swap any tokens you’ve created or acquired using the familiar Uniswap interface.
 
 ---
 
-### 🌉 Bridge Assets
+### Bridge Assets
 Need to move assets from other chains?  
 Follow the **official Base bridging documentation** to safely transfer funds to the Base network.
 
 ---
 
-## 🧭 Getting Started
+## Getting Started
 
 1. **Connect your wallet** to the Base network.  
 2. **Ensure** you have some ETH on Base for gas fees.  
@@ -110,7 +110,7 @@ Follow the **official Base bridging documentation** to safely transfer funds to 
 
 ---
 
-## 💡 Why Use BaseBuddy?
+## Why Use BaseBuddy?
 
 Learning blockchain development can be intimidating.  
 BaseBuddy removes the coding barrier so you can focus on understanding what smart contracts **actually do**.
@@ -124,7 +124,7 @@ Perfect for beginners or anyone exploring the Base ecosystem.
 
 ---
 
-## 🆘 Need Help?
+## Need Help?
 
 All contracts deployed via BaseBuddy are **standard smart contracts** on Base.  
 You can:
@@ -136,4 +136,4 @@ Start with the **GM Contract** — it’s simple, cheap, and walks you through t
 
 ---
 
-🧩 **BaseBuddy** — Learn by doing. Build by exploring.
+**BaseBuddy** — Learn by doing. Build by exploring.
