@@ -36,10 +36,10 @@ You earn energy by interacting with BaseBuddy contracts:
 | 2nd–4th GM | 200 points each | GM Contract |
 | 5th GM bonus | 500 points | GM Contract |
 | Additional GMs | 200 points each | GM Contract |
-| Deploy a token | 5 points | Token Contract |
-| Mint an NFT | 5 points | NFT Contract |
-| Deploy a contract | 5 points | Hello World Factory |
-| Send a message | 2 points | Guestbook Contract |
+| Deploy a token | 50 points | Token Contract |
+| Mint an NFT | 50 points | NFT Contract |
+| Deploy a contract | 50 points | Hello World Factory |
+| Send a message | 50 points | Guestbook Contract |
 
 > Note: Energy values can change over time to keep the system balanced as BaseBuddy evolves.
 
@@ -103,74 +103,12 @@ Every energy grant is transparent and verifiable forever.
 | Action Type | Default Energy |
 |--------------|----------------|
 | GM Actions | 100–500 points |
-| Token Deploys | 5 points |
-| NFT Mints | 5 points |
-| Contract Deploys | 5 points |
-| Guestbook Messages | 2 points |
+| Token Deploys | 50 points |
+| NFT Mints | 50 points |
+| Contract Deploys | 50 points |
+| Guestbook Messages | 50 points |
 
-Energy rates can change to:
 
-- Balance rewards across actions  
-- Encourage community behavior  
-- Respond to feedback  
-- Maintain fairness  
-
-All updates are **recorded onchain**.
+All energy is **recorded onchain**.
 
 ---
-
-## For Users
-
-| Use Case | Description |
-|-----------|-------------|
-| **Track Participation** | See your BaseBuddy engagement over time |
-| **Compare Activity** | View your position among the community |
-| **Prove Presence** | Show your contributions onchain |
-| **Earn Rewards** | Qualify for future airdrops or utilities |
-
----
-
-## For Developers
-
-| Use Case | Description |
-|-----------|-------------|
-| **Integrate New Features** | Plug into the registry to reward users |
-| **Access Analytics** | Measure engagement across BaseBuddy |
-| **Ensure Fairness** | Use consistent point values |
-| **Enable Rewards** | Support future gamified utilities |
-
----
-
-## For Communities / DAOs
-
-| Use Case | Description |
-|-----------|-------------|
-| **Recognize Contributors** | Reward real engagement |
-| **Airdrop Eligibility** | Use energy as a trust metric |
-| **Measure Health** | Gauge participation and growth |
-| **Reduce Sybil Risk** | Reward diverse, verifiable actions |
-
----
-
-## Security & Reliability
-
-### Access Control
-- ✅ Only authorized contracts can grant energy  
-- ✅ Owner-managed authorization list  
-- ✅ Two-step ownership transfer  
-- ✅ Emergency pause protection  
-
-### Data Integrity
-- ✅ Balances never decrease (append-only)  
-- ✅ Global stats update automatically  
-- ✅ All actions emit onchain events  
-- ✅ No token transfers (prevents trading)
-
----
-
-## Why It Matters
-
-The Energy Registry turns everyday BaseBuddy actions into **meaningful progress**.  
-Each GM, mint, or deploy adds to your onchain identity — a growing record of contribution within the Base ecosystem.
-
-**Show up. Take action. Earn energy.**
