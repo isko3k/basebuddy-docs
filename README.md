@@ -18,8 +18,8 @@ Here are the core BaseBuddy contracts deployed on Base:
 | **Smart Contract Deployer** | `0x1D39960Ad3cc82c9466d850d7C207050573A8128` |
 | **Onchain Messenger** | `0x296172023c71e888034aE67764acB94BbCA5Fd9f` |
 | **Payment Splitter Factory** | `0xB7c724358dcfBbD9A6c6646CF45B7ABa35B0e784` |
-| **Simple Staking** | `0x6aE789F61c5B12038ab73Af41D63C6E3899B429e` |
-| **BUDDY Token** | `0xF89CE9396A7eD0e634cCd7C52eA3D0FA21b8863a` |
+| **Simple Staking** | `0x1Af404F23eaEb2D3a356d47903F6C81A219b8b26` |
+| **BUDDY Token** | `0x17270f4c0b0cb5b85f23c5875481c6f6306e62fd` |
 
 ---
 
