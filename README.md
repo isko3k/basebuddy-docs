@@ -11,12 +11,12 @@ Here are the core BaseBuddy contracts deployed on Base:
 
 | Contract | Address |
 |-----------|----------|
-| **GM Contract** | `0xa42bbE6477CF20dAa5c9b04b68dBA385e42eb971` |
+| **GM Contract** | `0x6759e080d04ECc357EE65C5ceCdC1B427f14A87e` |
 | **Energy Registry** | `0x3627D10176971a3cB3Ff39482153dEE8CC2A65D9` |
-| **NFT Minter Contract** | `0x874d80481f96D8EC1373e445144E97a6c265FbA2` |
+| **NFT Minter Contract** | `0xFc689a8DBe041B4c16b372A70510DB03aF11F22A` |
 | **Token Creator Contract** | `0xDd0a588266c9B784D6029b40D4775E953eF265cd` |
 | **Smart Contract Deployer** | `0x1D39960Ad3cc82c9466d850d7C207050573A8128` |
-| **Onchain Messenger** | `0x296172023c71e888034aE67764acB94BbCA5Fd9f` |
+| **Onchain Messenger** | `0x0064C57482bF6D2d16666fC219fe6B3296D7D5a1` |
 | **Payment Splitter Factory** | `0xB7c724358dcfBbD9A6c6646CF45B7ABa35B0e784` |
 | **Simple Staking** | `0x1Af404F23eaEb2D3a356d47903F6C81A219b8b26` |
 | **BUDDY Token** | `0x17270f4c0b0cb5b85f23c5875481c6f6306e62fd` |
