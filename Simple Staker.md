@@ -11,8 +11,8 @@ Pick a commitment level, stake your tokens, and watch your rewards grow over tim
 
 | Item | Address |
 |------|----------|
-| **Staking Contract** | `0x6aE789F61c5B12038ab73Af41D63C6E3899B429e` |
-| **BUDDY Token** | `0xF89CE9396A7eD0e634cCd7C52eA3D0FA21b8863a` |
+| **Staking Contract** | `0x1Af404F23eaEb2D3a356d47903F6C81A219b8b26` |
+| **BUDDY Token** | `0x17270f4c0b0cb5b85f23c5875481c6f6306e62fd` |
 
 ---
 
