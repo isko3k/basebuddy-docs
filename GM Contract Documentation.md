@@ -10,7 +10,7 @@ Your GM count and last message are stored on the blockchain, and your energy poi
 
 | Contract | Address |
 |-----------|----------|
-| **GM Contract** | `0xa42bbE6477CF20dAa5c9b04b68dBA385e42eb971` |
+| **GM Contract** | `0x6759e080d04ECc357EE65C5ceCdC1B427f14A87e` |
 
 ---
 
