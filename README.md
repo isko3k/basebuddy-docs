@@ -14,7 +14,7 @@ Here are the core BaseBuddy contracts deployed on Base:
 | **GM Contract** | `0x6759e080d04ECc357EE65C5ceCdC1B427f14A87e` |
 | **Energy Registry** | `0x3627D10176971a3cB3Ff39482153dEE8CC2A65D9` |
 | **NFT Minter Contract** | `0xFc689a8DBe041B4c16b372A70510DB03aF11F22A` |
-| **Token Creator Contract** | `0xDd0a588266c9B784D6029b40D4775E953eF265cd` |
+| **Token Creator Contract** | `0x282a59faBf85f513f3a52B794B8c3b0655a787a8` |
 | **Smart Contract Deployer** | `0x1D39960Ad3cc82c9466d850d7C207050573A8128` |
 | **Onchain Messenger** | `0x0064C57482bF6D2d16666fC219fe6B3296D7D5a1` |
 | **Payment Splitter Factory** | `0xB7c724358dcfBbD9A6c6646CF45B7ABa35B0e784` |
